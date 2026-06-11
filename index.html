@@ -2,9 +2,46 @@
 <html lang="en">
 <head>
     <style>
-    html{
+    html {
         scroll-behavior:smooth;
     }
+    .data {
+        /* 合并相邻边框 */
+        border-collapse: collapse;
+        
+        /* 边框 1像素 实线 颜色 */
+        border: 2px solid #ededed;
+
+        width: px;
+        /* 让表格在网页中居中 */
+        margin: 0 auto;
+
+        /* 让表格的文字水平居中 */
+        text-align: center;
+        font-size: 14px;
+
+    }
+
+    .data tr {
+        height: 50px;
+        
+    }
+
+    .data td {
+        height: 60px;
+        padding: 0 15px;
+    }
+    .data tr:nth-child(odd) {
+        background-color: #f9f9f9;
+    }
+
+    .data tr:first-child {
+        background-color: #8fbcf1;
+        color: #fff;
+    }
+    
+
+    
 </style>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -55,70 +92,67 @@
 
         <!-- 表格部分 -->
         <h2>课程表</h2>
-        <table border="1">
-            <thead>
-                <tr>
-                    <td></td>
-                    <td><strong>星期一</strong></td>
-                    <td><strong>星期二</strong></td>
-                    <td><strong>星期三</strong></td>
-                    <td><strong>星期四</strong></td>
-                    <td><strong>星期五</strong></td>
-                    <td><strong>星期六</strong></td>
-                    <td><strong>星期日</strong></td>
-                </tr>
-            </thead>
-            <body>
-                <tr>
-                    <td><strong>第一大节</strong></td>
-                    <td>高等数学</td>
-                    <td>马克思主<br>义基本原理</td>
-                    <td>大学英语</td>
-                    <td>马克思主<br>义基本原理</td>
-                    <td>高等数学</td>
-                    <td></td>
-                    <td></td>
-                </tr>
-                <tr>
-                    <td><strong>第二大节</strong></td>
-                    <td>大学物理</td>
-                    <td>体育</td>
-                    <td>高等数学</td>
-                    <td>C语言程序<br>设计</td>
-                    <td>大学英语</td>
-                    <td></td>
-                    <td></td>
-                </tr>
-                <tr>
-                    <td><strong>第三大节</strong></td>
-                    <td></td>
-                    <td></td>
-                    <td>国家安全教育</td>
-                    <td></td>
-                    <td></td>
-                    <td></td>
-                    <td>军事理论</td>
-                </tr>
-                <tr>
-                    <td><strong>第四大节</strong></td>
-                    <td>C语言程序设计</td>
-                    <td></td>
-                    <td>大学物理</td>
-                    <td>形势与政策</td>
-                    <td>大学生就业指导</td>
-                    <td></td>
-                    <td>军事理论</td>
-                </tr>
-                <tr>
-                    <td><strong>第五大节</strong></td>
-                    <td></td>
-                    <td></td>
-                    <td>时尚美学与<br>品牌故事</td>
-                    <td></td>
-                    <td></td>
-                    <td></td>
-                    <td></td>
-            </body>
+        <table class="data">
+            <tr >
+                <td></td>
+                <td><strong>星期一</strong></td>
+                <td><strong>星期二</strong></td>
+                <td><strong>星期三</strong></td>
+                <td><strong>星期四</strong></td>
+                <td><strong>星期五</strong></td>
+                <td><strong>星期六</strong></td>
+                <td><strong>星期日</strong></td>
+            </tr>
+            <tr>
+                <td><strong>第一大节</strong></td>
+                <td>高等数学</td>
+                <td>马克思主<br>义基本原理</td>
+                <td>大学英语</td>
+                <td>马克思主<br>义基本原理</td>
+                <td>高等数学</td>
+                <td></td>
+                <td></td>
+            </tr>
+            <tr>
+                <td><strong>第二大节</strong></td>
+                <td>大学物理</td>
+                <td>体育</td>
+                <td>高等数学</td>
+                <td>C语言程序<br>设计</td>
+                <td>大学英语</td>
+                <td></td>
+                <td></td>
+            </tr>
+            <tr>
+                <td><strong>第三大节</strong></td>
+                <td></td>
+                <td></td>
+                <td>国家安全<br>教育</td>
+                <td></td>
+                <td></td>
+                <td></td>
+                <td>军事理论</td>
+            </tr>
+            <tr>
+                <td><strong>第四大节</strong></td>
+                <td>C语言程序<br>设计</td>
+                <td></td>
+                <td>大学物理</td>
+                <td>形势与政策</td>
+                <td>大学生就业<br>指导</td>
+                <td></td>
+                <td>军事理论</td>
+            </tr>
+            <tr>
+                <td><strong>第五大节</strong></td>
+                <td></td>
+                <td></td>
+                <td>时尚美学与<br>品牌故事</td>
+                <td></td>
+                <td></td>
+                <td></td>
+                <td></td>
+            </tr>
         </table>
     </main>
 
